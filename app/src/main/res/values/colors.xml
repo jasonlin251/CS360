@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_purple">#6C4DFF</color>
+    <color name="brand_purple_dark">#4C2FD1</color>
+    <color name="brand_purple_light">#EEE9FF</color>
+    <color name="screen_background">#F7F7FC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_primary">#222338</color>
+    <color name="text_secondary">#686A7E</color>
+    <color name="border">#DADCE7</color>
+    <color name="grid_header">#EEEAFD</color>
+    <color name="danger">#B3261E</color>
+    <color name="danger_light">#FDECEA</color>
+    <color name="success">#16794B</color>
+    <color name="success_light">#E7F6EE</color>
+    <color name="blue_badge">#E7F0FF</color>
+    <color name="blue_text">#2457A7</color>
+    <color name="orange_badge">#FFF2DE</color>
+    <color name="orange_text">#A65D00</color>
+    <color name="green_badge">#E7F6EE</color>
+    <color name="green_text">#16794B</color>
+    <color name="disabled">#B9B7C8</color>
+</resources>

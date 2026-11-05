@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EventFlow</string>
+    <string name="login_title">Welcome to EventFlow</string>
+    <string name="login_subtitle">Plan smarter and never miss an important event.</string>
+    <string name="account_heading">Sign in to continue</string>
+    <string name="username_label">Username</string>
+    <string name="username_hint">Enter your username</string>
+    <string name="password_label">Password</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="login_button">Log In</string>
+    <string name="create_account_button">Create New Account</string>
+    <string name="first_time_message">First time using EventFlow?</string>
+    <string name="privacy_note">Your event details stay organized in one easy place.</string>
+    <string name="enter_login_details">Enter both a username and password.</string>
+    <string name="account_preview_message">Account creation preview complete.</string>
+
+    <string name="events_title">Upcoming Events</string>
+    <string name="events_subtitle">Review, add, and manage your schedule.</string>
+    <string name="welcome_default">Welcome back</string>
+    <string name="welcome_user">Welcome, %1$s</string>
+    <string name="event_count">3 events coming up</string>
+    <string name="add_event">+ Add Event</string>
+    <string name="sms_settings">SMS Notifications</string>
+    <string name="grid_title">Event schedule</string>
+    <string name="grid_help">Swipe horizontally if needed to view every column.</string>
+    <string name="column_event">Event</string>
+    <string name="column_date">Date</string>
+    <string name="column_time">Time</string>
+    <string name="column_category">Category</string>
+    <string name="column_action">Action</string>
+    <string name="event_doctor">Doctor Appointment</string>
+    <string name="event_assignment">CS 360 Project</string>
+    <string name="event_work">Team Meeting</string>
+    <string name="date_one">Aug 5</string>
+    <string name="date_two">Aug 8</string>
+    <string name="date_three">Aug 10</string>
+    <string name="time_one">10:00 AM</string>
+    <string name="time_two">11:59 PM</string>
+    <string name="time_three">2:00 PM</string>
+    <string name="category_personal">Personal</string>
+    <string name="category_school">School</string>
+    <string name="category_work">Work</string>
+    <string name="delete">Delete</string>
+    <string name="delete_preview_message">Delete action will connect to the database in Project Three.</string>
+
+    <string name="add_event_title">Add New Event</string>
+    <string name="add_event_subtitle">Enter the details below in the order shown.</string>
+    <string name="event_title_label">Event title</string>
+    <string name="event_title_hint">Example: Dentist appointment</string>
+    <string name="date_label">Date</string>
+    <string name="date_hint">MM/DD/YYYY</string>
+    <string name="time_label">Time</string>
+    <string name="time_hint">HH:MM AM/PM</string>
+    <string name="category_label">Category</string>
+    <string name="details_label">Event details</string>
+    <string name="details_hint">Add notes, a location, or anything you need to remember.</string>
+    <string name="save_event">Save Event</string>
+    <string name="cancel">Cancel</string>
+    <string name="save_preview_message">Event saved in this UI preview.</string>
+    <string-array name="event_categories">
+        <item>Personal</item>
+        <item>School</item>
+        <item>Work</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="sms_title">SMS Notifications</string>
+    <string name="sms_subtitle">Choose whether EventFlow may send automated event reminders.</string>
+    <string name="sms_card_title">Never miss an upcoming event</string>
+    <string name="sms_description">Allow SMS access to receive a text reminder before an event begins.</string>
+    <string name="sms_feature_one">• Receive reminders for upcoming events</string>
+    <string name="sms_feature_two">• Continue using the app if permission is denied</string>
+    <string name="sms_feature_three">• Change this choice later in device settings</string>
+    <string name="sms_status_heading">Current status</string>
+    <string name="sms_off_status">SMS notifications are currently off.</string>
+    <string name="sms_allowed_status">SMS permission granted. Event reminders are available.</string>
+    <string name="sms_denied_status">Permission was not granted. The rest of the app will continue to work.</string>
+    <string name="allow_sms">Allow SMS Notifications</string>
+    <string name="not_now">Not Now</string>
+</resources>

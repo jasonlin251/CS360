@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:background="@drawable/bg_header"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:paddingBottom="28dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_event_title"
+                android:textColor="@color/white"
+                android:textSize="29sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/add_event_subtitle"
+                android:textColor="#E8E2FF"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/eventTitleField"
+                android:text="@string/event_title_label"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/eventTitleField"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_field"
+                android:hint="@string/event_title_hint"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:nextFocusDown="@id/eventDateField"
+                android:singleLine="true"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/eventDateField"
+                        android:text="@string/date_label"
+                        android:textColor="@color/text_primary"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/eventDateField"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/bg_field"
+                        android:hint="@string/date_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:nextFocusDown="@id/eventTimeField"
+                        android:singleLine="true"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/eventTimeField"
+                        android:text="@string/time_label"
+                        android:textColor="@color/text_primary"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/eventTimeField"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/bg_field"
+                        android:hint="@string/time_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="time"
+                        android:nextFocusDown="@id/eventDetailsField"
+                        android:singleLine="true"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:labelFor="@id/categorySpinner"
+                android:text="@string/category_label"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/categorySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_field"
+                android:entries="@array/event_categories"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:labelFor="@id/eventDetailsField"
+                android:text="@string/details_label"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/eventDetailsField"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_field"
+                android:gravity="top|start"
+                android:hint="@string/details_hint"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences|textMultiLine"
+                android:paddingTop="14dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary" />
+
+            <Button
+                android:id="@+id/saveEventButton"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_primary_button"
+                android:text="@string/save_event"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_secondary_button"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/brand_purple"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
